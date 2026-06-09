@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "brand": "Phil d'Elo - Creole Restaurant"
+  },
+  "hero": {
+    "titleBefore": "The sunshine of",
+    "titleHighlight": "Réunion",
+    "titleAfter": "on your plate.",
+    "subtitle": "Travel 10,000 km without leaving southern France. Artisanal, spicy and generous cuisine, prepared with love and tradition.",
+    "ctaMenu": "View the Menu",
+    "ctaBook": "Book a Table",
+    "freshProducts": "Fresh Products",
+    "dailyDelivery": "Daily deliveries",
+    "imageAlt": "Rougail Saucisse"
+  },
+  "about": {
+    "label": "Our Story",
+    "title": "From volcanic roots to the heart of Provence.",
+    "paragraph1": "Born in Saint-Denis, our Chef Elisette brought her grandmother's secrets in her suitcases. Ô Phil d'Elo is not just a restaurant, it's a bridge between two cultures.",
+    "paragraph2Before": "We cook like at home: ",
+    "paragraph2After": " (local saffron), combava and Bourbon vanilla rhythm our preparations. A cuisine of sharing, warm and unpretentious.",
+    "curcuma": "turmeric",
+    "homemade": "Homemade",
+    "rhumArrange": "Flavored Rum",
+    "imageAlt": "Spices and cooking"
+  },
+  "menu": {
+    "title": "A Menu of Flavors",
+    "subtitle": "A selection of our signature dishes, evolving with the seasons and market arrivals.",
+    "downloadFull": "Download the full menu"
+  },
+  "gallery": {
+    "title": "Tropical Immersion",
+    "subtitle": "A relaxed and warm atmosphere.",
+    "altInterior": "Restaurant interior",
+    "altCocktail": "Cocktail",
+    "altDessert": "Dessert"
+  },
+  "info": {
+    "title": "Practical Info",
+    "subtitle": "Find us in Cap d'Agde.",
+    "addressLabel": "Address",
+    "addressLine1": "24 QUAI DI DOMINICO LE CAP D AGDE",
+    "addressLine2": "34300 AGDE",
+    "hoursLabel": "Opening Hours",
+    "hours": "Monday - Sunday: 12:00 PM - 3:30 PM / 6:30 PM - 10:30 PM",
+    "closedWednesday": "Wednesday: Closed"
+  },
+  "booking": {
+    "title": "Book a Table",
+    "subtitle": "Contact us to make a reservation:",
+    "call": "Call",
+    "sms": "Send a Text"
+  },
+  "footer": {
+    "rights": "© 2026 All rights reserved."
+  }
+}

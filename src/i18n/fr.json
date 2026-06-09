@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "brand": "Phil d'Elo - Restaurant Créole"
+  },
+  "hero": {
+    "titleBefore": "Le soleil de la",
+    "titleHighlight": "Réunion",
+    "titleAfter": "dans votre assiette.",
+    "subtitle": "Voyagez à 10 000 km sans quitter le sud de la France. Une cuisine artisanale, épicée et généreuse, préparée avec amour et tradition.",
+    "ctaMenu": "Voir la Carte",
+    "ctaBook": "Réserver une table",
+    "freshProducts": "Produits Frais",
+    "dailyDelivery": "Arrivage quotidien",
+    "imageAlt": "Rougail Saucisse"
+  },
+  "about": {
+    "label": "Notre Histoire",
+    "title": "Des racines volcaniques au cœur de la Provence.",
+    "paragraph1": "Née a Saint-Denis, notre Cheffe Elisette a emporté dans ses valises les secrets de sa grand-mère. Ô Phil d'Elo n'est pas juste un restaurant, c'est un pont entre deux cultures.",
+    "paragraph2Before": "Nous cuisinons comme à la maison : le ",
+    "paragraph2After": " (safran péi), le combava et la vanille bourbon rythment nos préparations. Une cuisine de partage, chaleureuse et sans artifice.",
+    "curcuma": "curcuma",
+    "homemade": "Fait Maison",
+    "rhumArrange": "Rhum Arrangé",
+    "imageAlt": "Épices et cuisine"
+  },
+  "menu": {
+    "title": "La Carte des Saveurs",
+    "subtitle": "Une sélection de nos plats signatures, évoluant au gré des saisons et des arrivages du marché.",
+    "downloadFull": "Télécharger le menu complet"
+  },
+  "gallery": {
+    "title": "Immersion Tropicale",
+    "subtitle": "Une ambiance décontractée et chaleureuse.",
+    "altInterior": "Intérieur du restaurant",
+    "altCocktail": "Cocktail",
+    "altDessert": "Dessert"
+  },
+  "info": {
+    "title": "Infos Pratiques",
+    "subtitle": "Retrouvez-nous au Cap d'Agde.",
+    "addressLabel": "Adresse",
+    "addressLine1": "24 QUAI DI DOMINICO LE CAP D AGDE",
+    "addressLine2": "34300 AGDE",
+    "hoursLabel": "Horaires",
+    "hours": "Lundi - Dimanche : 12h00 - 15h30 / 18h30 - 22h30",
+    "closedWednesday": "Mercredi : Fermé"
+  },
+  "booking": {
+    "title": "Réserver une table",
+    "subtitle": "Contactez-nous pour une réservation :",
+    "call": "Appeler",
+    "sms": "Envoyer un SMS"
+  },
+  "footer": {
+    "rights": "© 2026 Tous droits réservés."
+  }
+}

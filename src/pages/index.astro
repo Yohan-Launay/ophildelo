@@ -1,11 +1,425 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <div
+    class="bg-stone-50 text-stone-600 antialiased selection:bg-orange-200 selection:text-orange-900"
+  >
+    <header
+      class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <video
+          src="/video-header.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          class="w-full h-full object-cover"
+          aria-hidden="true"></video>
+        <div
+          class="absolute inset-0 bg-linear-to-r from-stone-900/40 via-stone-900/20 to-transparent"
+        >
+        </div>
+        <div
+          class="absolute inset-0 bg-linear-to-t from-stone-50 via-transparent to-transparent"
+        >
+        </div>
+      </div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="space-y-8">
+          <h1
+            class="text-5xl md:text-7xl font-semibold text-white tracking-tight leading-[1.1] text-shadow-sm"
+          >
+            <span data-i18n="hero.titleBefore">Le soleil de la</span>{" "}
+            <span
+              class="text-yellow italic font-serif"
+              data-i18n="hero.titleHighlight">Réunion</span
+            >{" "}
+            <span data-i18n="hero.titleAfter">dans votre assiette.</span>
+          </h1>
+
+          <p
+            class="text-lg text-stone-100 max-w-lg leading-relaxed font-light"
+            data-i18n="hero.subtitle"
+          >
+            Voyagez à 10 000 km sans quitter le sud de la France. Une cuisine
+            artisanale, épicée et généreuse, préparée avec amour et tradition.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a
+              href="#menu"
+              class="group flex items-center justify-center gap-2 bg-blue hover:bg-orange text-yellow px-8 py-3.5 rounded-full text-sm font-medium transition-all shadow-xl shadow-blue-500/20"
+            >
+              <iconify-icon
+                icon="solar:chef-hat-linear"
+                width="20"
+                stroke-width="1.5"></iconify-icon>
+              <span data-i18n="hero.ctaMenu">Voir la Carte</span>
+            </a>
+            <a
+              href="#book"
+              class="group flex items-center justify-center gap-2 bg-yellow hover:bg-orange text-blue px-8 py-3.5 rounded-full text-sm font-medium transition-all shadow-xl shadow-yellow-500/20"
+            >
+              <iconify-icon
+                icon="solar:calendar-linear"
+                width="20"
+                stroke-width="1.5"></iconify-icon>
+              <span data-i18n="hero.ctaBook">Réserver une table</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <section id="about" class="py-24 md:py-32 relative overflow-hidden">
+    <div
+      class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-yellow rounded-full blur-3xl opacity-50"
+    >
+    </div>
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div class="order-2 md:order-1 relative group">
+        <div
+          class="absolute inset-0 bg-stone-900 rounded-2xl rotate-2 group-hover:rotate-1 transition-transform opacity-10"
+        >
+        </div>
+        <img
+          src="/photo-13.jpeg"
+          alt="Épices et cuisine"
+          data-i18n-alt="about.imageAlt"
+          class="relative rounded-2xl shadow-xl w-full h-[500px] object-cover -rotate-1 group-hover:rotate-0 transition-transform duration-500"
+        />
+      </div>
+
+      <div class="order-1 md:order-2 space-y-6">
+        <div
+          class="flex items-center gap-2 text-blue font-medium text-sm tracking-wide uppercase"
+        >
+          <span class="w-8 h-[1px] bg-blue"></span>
+          <span data-i18n="about.label">Notre Histoire</span>
+        </div>
+        <h2
+          class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight"
+          data-i18n="about.title"
+        >
+          Des racines volcaniques au cœur de la Provence.
+        </h2>
+        <p class="text-stone-600 leading-relaxed" data-i18n="about.paragraph1">
+          Née a Saint-Denis, notre Cheffe Elisette a emporté dans ses valises
+          les secrets de sa grand-mère. Ô Phil d'Elo n'est pas juste un
+          restaurant, c'est un pont entre deux cultures.
+        </p>
+        <p class="text-stone-600 leading-relaxed">
+          <span data-i18n="about.paragraph2Before"
+            >Nous cuisinons comme à la maison : le
+          </span>
+          <span class="text-blue font-medium" data-i18n="about.curcuma"
+            >curcuma</span
+          >
+          <span data-i18n="about.paragraph2After">
+            (safran péi), le combava et la vanille bourbon rythment nos
+            préparations. Une cuisine de partage, chaleureuse et sans artifice.</span
+          >
+        </p>
+
+        <div class="grid grid-cols-2 gap-8 pt-4">
+          <div>
+            <iconify-icon
+              icon="solar:heart-angle-linear"
+              class="text-blue mb-2"
+              width="32"
+              stroke-width="1.5"></iconify-icon>
+            <h4 class="font-semibold text-stone-900" data-i18n="about.homemade">
+              Fait Maison
+            </h4>
+          </div>
+          <div>
+            <iconify-icon
+              icon="solar:bottle-linear"
+              class="text-blue mb-2"
+              width="32"
+              stroke-width="1.5"></iconify-icon>
+            <h4
+              class="font-semibold text-stone-900"
+              data-i18n="about.rhumArrange"
+            >
+              Rhum Arrangé
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="py-24 bg-white border-y border-stone-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h2
+          class="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight mb-4 text-blue"
+          data-i18n="menu.title"
+        >
+          La Carte des Saveurs
+        </h2>
+        <p class="text-stone-500" data-i18n="menu.subtitle">
+          Une sélection de nos plats signatures, évoluant au gré des saisons et
+          des arrivages du marché.
+        </p>
+      </div>
+
+      <div
+        class="mt-8 text-center flex flex-col sm:flex-row justify-center items-center gap-4"
+      >
+        <a
+          href="/menu.pdf"
+          download
+          class="inline-flex items-center gap-2 text-stone-900 hover:text-blue font-medium transition-colors border-b border-stone-300 pb-1 hover:border-orange-600"
+        >
+          <span data-i18n="menu.downloadFull">Télécharger le menu complet</span>
+          <iconify-icon
+            icon="solar:file-download-linear"
+            width="18"
+            stroke-width="1.5"></iconify-icon>
+        </a>
+        <a
+          href="#book"
+          class="inline-flex items-center gap-2 bg-blue text-white px-6 py-2 rounded-lg hover:bg-orange transition-colors"
+        >
+          <iconify-icon
+            icon="solar:calendar-linear"
+            width="18"
+            stroke-width="1.5"></iconify-icon>
+          <span data-i18n="hero.ctaBook">Réserver une table</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-24 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div
+        class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
+      >
+        <div>
+          <h2
+            class="text-3xl md:text-4xl font-semibold text-blue tracking-tight"
+            data-i18n="gallery.title"
+          >
+            Immersion Tropicale
+          </h2>
+          <p class="text-stone-500 mt-2" data-i18n="gallery.subtitle">
+            Une ambiance décontractée et chaleureuse.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px] md:h-[500px]">
+        <div
+          class="col-span-2 row-span-2 relative rounded-2xl overflow-hidden group"
+        >
+          <img
+            src="/photo-1.jpeg"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            alt="Intérieur du restaurant"
+            data-i18n-alt="gallery.altInterior"
+          />
+        </div>
+        <div class="relative rounded-2xl overflow-hidden group">
+          <img
+            src="/photo-10.jpeg"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            alt="Cocktail"
+            data-i18n-alt="gallery.altCocktail"
+          />
+        </div>
+        <div class="relative rounded-2xl overflow-hidden group">
+          <img
+            src="/photo-14.jpeg"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            alt="Dessert"
+            data-i18n-alt="gallery.altDessert"
+          />
+        </div>
+        <div class="relative rounded-2xl overflow-hidden group">
+          <img
+            src="/photo-4.jpeg"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            alt="Dessert"
+            data-i18n-alt="gallery.altDessert"
+          />
+        </div>
+        <div class="relative rounded-2xl overflow-hidden group">
+          <img
+            src="/photo-6.jpeg"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            alt="Dessert"
+            data-i18n-alt="gallery.altDessert"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="relative text-stone-300 py-24 overflow-hidden">
+    <div
+      class="absolute top-0 left-0 w-full h-px from-transparent via-stone-700 to-transparent"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow rounded-full blur-[100px]"
+    >
+    </div>
+
+    <div
+      class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 relative z-10"
+    >
+      <div class="space-y-10">
+        <div>
+          <h2
+            class="text-3xl md:text-4xl font-semibold text-blue tracking-tight mb-2"
+            data-i18n="info.title"
+          >
+            Infos Pratiques
+          </h2>
+          <p class="text-stone-400" data-i18n="info.subtitle">
+            Retrouvez-nous au Cap d'Agde.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div
+            class="flex items-start gap-4 p-4 rounded-xl border border-stone-800 transition-colors"
+          >
+            <div class="p-2 bg-blue rounded-lg text-yellow">
+              <iconify-icon
+                icon="solar:map-point-linear"
+                width="24"
+                stroke-width="1.5"></iconify-icon>
+            </div>
+            <div class="flex-1">
+              <h4
+                class="text-blue font-medium mb-1"
+                data-i18n="info.addressLabel"
+              >
+                Adresse
+              </h4>
+              <p class="text-sm text-stone-600">
+                <span data-i18n="info.addressLine1"
+                  >24 QUAI DI DOMINICO LE CAP D AGDE</span
+                >
+                <br />
+                <span data-i18n="info.addressLine2">34300 AGDE</span>
+              </p>
+            </div>
+            <a
+              href="https://www.google.com/maps/place/%C3%94+Phil+d'Elo+974/@43.2849787,3.5092657,17.32z/data=!4m6!3m5!1s0x12b13b506b487fc3:0x9c7c4ae1d07fd423!8m2!3d43.2845434!4d3.5095494!16s%2Fg%2F11fylw82d_!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex-shrink-0 p-2 bg-yellow text-blue rounded-lg hover:bg-orange transition-colors"
+            >
+              <iconify-icon
+                icon="solar:point-on-map-linear"
+                width="20"
+                stroke-width="1.5"></iconify-icon>
+            </a>
+          </div>
+
+          <div
+            class="flex items-start gap-4 p-4 rounded-xl border border-stone-800 transition-colors"
+          >
+            <div class="p-2 bg-blue rounded-lg text-yellow">
+              <iconify-icon
+                icon="solar:clock-circle-linear"
+                width="24"
+                stroke-width="1.5"></iconify-icon>
+            </div>
+            <div>
+              <h4
+                class="text-blue font-medium mb-1"
+                data-i18n="info.hoursLabel"
+              >
+                Horaires
+              </h4>
+              <p class="text-sm text-stone-600">
+                <span data-i18n="info.hours"
+                  >Lundi - Dimanche : 12h00 - 15h30 / 18h30 - 22h30</span
+                >
+                <br />
+                <span data-i18n="info.closedWednesday">Mercredi : Fermé</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="book"
+        class="bg-white rounded-2xl p-8 text-stone-800 shadow-2xl shadow-black/20"
+      >
+        <h3
+          class="text-2xl font-semibold mb-6 tracking-tight text-blue"
+          data-i18n="booking.title"
+        >
+          Réserver une table
+        </h3>
+        <p class="mb-4 text-stone-600" data-i18n="booking.subtitle">
+          Contactez-nous pour une réservation :
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="tel:+33442000000"
+            class="bg-blue text-white px-6 py-3 rounded-lg hover:bg-orange transition-colors flex items-center justify-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+              ></path>
+            </svg>
+            <span data-i18n="booking.call">Appeler</span>
+          </a>
+          <a
+            href="sms:+33442000000"
+            class="bg-blue text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+              ></path>
+              <path
+                d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+              ></path>
+            </svg>
+            <span data-i18n="booking.sms">Envoyer un SMS</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-stone-500 py-8 text-sm">
+    <div
+      class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4"
+    >
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-blue tracking-tight">Ô Phil d'Elo</span>
+        <span class="text-stone-600">|</span>
+        <span data-i18n="footer.rights">© 2026 Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
 </Layout>

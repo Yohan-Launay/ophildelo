@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+	--yellow-color: #fff229;
+	--blue-color: #0166b3;
+	--orange-color: #ff6900;
+}
+
+.text-yellow {
+	color: var(--yellow-color);
+}
+
+.text-blue {
+	color: var(--blue-color);
+}
+
+.text-orange {
+	color: var(--orange-color);
+}
+
+.bg-yellow {
+	background-color: var(--yellow-color);
+}
+
+.bg-blue {
+	background-color: var(--blue-color);
+}
+
+.bg-orange {
+	background-color: var(--orange-color);
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #d6d3d1;
+	border-radius: 20px;
+}
+
+body {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Outfit', sans-serif;
+}
+
+.glass-nav {
+	background: rgba(255, 255, 255, 0.85);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+.text-shadow-sm {
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,23 +1,50 @@
+---
+import '../styles/global.css';
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Ô Phil d'Elo - Restaurant Créole au Cap d'Agde. Cuisine réunionnaise artisanale, épicée et généreuse." />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+		<title>Ô Phil d'Elo - Restaurant Créole</title>
 	</head>
 	<body>
-		<slot />
+		<nav class="fixed top-0 w-full z-50 glass-nav border-b border-stone-200/60 transition-all duration-300">
+			<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+				<a href="#" class="flex items-center gap-2 group">
+					<div class="w-8 h-8 bg-blue rounded-lg flex items-center justify-center text-white rotate-3 group-hover:rotate-6 transition-transform">
+						<span class="font-bold text-lg tracking-tighter text-yellow">Ô</span>
+					</div>
+					<span class="text-xl font-semibold tracking-tight text-blue" data-i18n="nav.brand">Phil d'Elo - Restaurant Créole</span>
+				</a>
+				<div class="flex items-center gap-2">
+					<button
+						id="lang-toggle"
+						type="button"
+						class="flex items-center gap-1 px-3 py-1 rounded-full bg-stone-100 hover:bg-stone-200 border border-stone-200 transition-colors text-sm font-medium"
+					>
+						<iconify-icon icon="solar:globe-linear" width="16"></iconify-icon>
+						<span id="lang-toggle-label">🇫🇷 FR</span>
+					</button>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<slot />
+		</main>
+		<script>
+			import { initI18n } from '../scripts/i18n';
+			initI18n();
+		</script>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
