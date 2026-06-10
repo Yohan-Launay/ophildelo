@@ -101,14 +101,14 @@ import Layout from "../layouts/Layout.astro";
         <div
           class="flex items-center gap-2 text-blue font-medium text-sm tracking-wide uppercase"
         >
-          <span class="w-8 h-[1px] bg-blue"></span>
+          <span class="w-8 h-px bg-blue"></span>
           <span data-i18n="about.label">Notre Histoire</span>
         </div>
         <h2
           class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight"
           data-i18n="about.title"
         >
-          Des racines volcaniques au cœur de la Provence.
+          Des racines volcaniques au cœur du sud de la France.
         </h2>
         <p class="text-stone-600 leading-relaxed" data-i18n="about.paragraph1">
           Née a Saint-Denis, notre Cheffe Elisette a emporté dans ses valises
@@ -177,7 +177,8 @@ import Layout from "../layouts/Layout.astro";
       >
         <a
           href="/menu.pdf"
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           class="inline-flex items-center gap-2 text-stone-900 hover:text-blue font-medium transition-colors border-b border-stone-300 pb-1 hover:border-orange-600"
         >
           <span data-i18n="menu.downloadFull">Télécharger le menu complet</span>
@@ -372,7 +373,7 @@ import Layout from "../layouts/Layout.astro";
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a
-            href="tel:+33442000000"
+            href="tel:+33640080525"
             class="bg-blue text-white px-6 py-3 rounded-lg hover:bg-orange transition-colors flex items-center justify-center gap-2"
           >
             <svg
@@ -388,7 +389,7 @@ import Layout from "../layouts/Layout.astro";
             <span data-i18n="booking.call">Appeler</span>
           </a>
           <a
-            href="sms:+33442000000"
+            href="sms:+33640080525"
             class="bg-blue text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
           >
             <svg
