@@ -23,6 +23,28 @@ import "../styles/global.css";
       defer></script>
     <title>Ô Phil d'Elo - Restaurant Créole</title>
   </head>
+  <script type="module">
+    window.axeptioSettings = {
+      clientId: "6a2c03b634b43d62e0c8e613",
+      cookiesVersion: "eb70a2bd-7ac5-40db-aeb0-b742e6bf2d3e",
+      googleConsentMode: {
+        default: {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500,
+        },
+      },
+    };
+    (function (d, s) {
+      var t = d.getElementsByTagName(s)[0],
+        e = d.createElement(s);
+      e.async = true;
+      e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GZXSNEMF1"
   ></script>
